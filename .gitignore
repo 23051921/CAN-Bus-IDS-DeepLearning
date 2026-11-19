@@ -1,0 +1,25 @@
+# Python & Environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.env
+venv/
+ENV/
+env/
+.venv/
+
+# Jupyter & IDE
+.ipynb_checkpoints
+.vscode/
+.idea/
+
+# OS specific
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Large dataset archives (keep processed CSVs and lightweight pt models)
+*.zip
+*.tar.gz
+*.rar

@@ -1,0 +1,133 @@
+[{"stream_name":"stderr","time":8.230695765,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.230748652,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.230754903,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.230758615,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.8743569,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.874390188,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.874395754,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.874399888,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":26.552749345,"data":"================================================================================\n"}
+,{"stream_name":"stdout","time":26.5527789,"data":"VERIFIED HARDWARE ACCELERATION: RUNNING ON DEDICATED CLOUD GPU\n"}
+,{"stream_name":"stdout","time":26.55279222,"data":"  Device Name : Tesla T4\n"}
+,{"stream_name":"stdout","time":26.55280039,"data":"  Total VRAM  : 14.56 GB\n"}
+,{"stream_name":"stdout","time":26.552817932,"data":"  CUDA Version: 12.8\n"}
+,{"stream_name":"stdout","time":26.552821964,"data":"================================================================================\n"}
+,{"stream_name":"stdout","time":26.552826305,"data":"CUDA GPU Detected: Tesla T4 (Capability (7, 5))\n"}
+,{"stream_name":"stdout","time":26.552830226,"data":"Hardware Acceleration Verified: Running on Tesla T4.\n"}
+,{"stream_name":"stdout","time":26.552834941,"data":"Active Working Directory: /kaggle/working\n"}
+,{"stream_name":"stdout","time":26.552839154,"data":"Total candidate data files discovered: 9\n"}
+,{"stream_name":"stdout","time":26.741648366,"data":"Searching across 9 total discovered files...\n"}
+,{"stream_name":"stdout","time":26.741681196000002,"data":"\n"}
+,{"stream_name":"stdout","time":26.741698035,"data":"Matched Attack Files:\n"}
+,{"stream_name":"stdout","time":26.74170237,"data":"  \u003e\u003e DoS   : /kaggle/input/datasets/pranavjha24/car-hacking-dataset/DoS_dataset.csv\n"}
+,{"stream_name":"stdout","time":26.741707208,"data":"  \u003e\u003e Fuzzy : /kaggle/input/datasets/pranavjha24/car-hacking-dataset/Fuzzy_dataset.csv\n"}
+,{"stream_name":"stdout","time":26.741711694,"data":"  \u003e\u003e RPM   : /kaggle/input/datasets/pranavjha24/car-hacking-dataset/RPM_dataset.csv\n"}
+,{"stream_name":"stdout","time":26.741740909,"data":"  \u003e\u003e Gear  : /kaggle/input/datasets/pranavjha24/car-hacking-dataset/gear_dataset.csv\n"}
+,{"stream_name":"stdout","time":26.741746834,"data":"Loading DoS_dataset.csv (/kaggle/input/datasets/pranavjha24/car-hacking-dataset/DoS_dataset.csv)...\n"}
+,{"stream_name":"stdout","time":76.079884186,"data":"  Sampled messages: 183,288 | Attack Ratio: 0.2483\n"}
+,{"stream_name":"stdout","time":76.079919067,"data":"Loading Fuzzy_dataset.csv (/kaggle/input/datasets/pranavjha24/car-hacking-dataset/Fuzzy_dataset.csv)...\n"}
+,{"stream_name":"stdout","time":126.700981529,"data":"  Sampled messages: 191,943 | Attack Ratio: 0.1465\n"}
+,{"stream_name":"stdout","time":126.701011761,"data":"Loading RPM_dataset.csv (/kaggle/input/datasets/pranavjha24/car-hacking-dataset/RPM_dataset.csv)...\n"}
+,{"stream_name":"stdout","time":186.9212861,"data":"  Sampled messages: 231,085 | Attack Ratio: 0.1858\n"}
+,{"stream_name":"stdout","time":186.9213321,"data":"Loading gear_dataset.csv (/kaggle/input/datasets/pranavjha24/car-hacking-dataset/gear_dataset.csv)...\n"}
+,{"stream_name":"stdout","time":244.108514887,"data":"  Sampled messages: 222,157 | Attack Ratio: 0.1886\n"}
+,{"stream_name":"stdout","time":244.108550503,"data":"\n"}
+,{"stream_name":"stdout","time":244.108555993,"data":"Normal Train samples: 110,215, Normal Val samples: 27,554\n"}
+,{"stream_name":"stdout","time":244.239569036,"data":"Fitting pipeline on benign Car-Hacking data...\n"}
+,{"stream_name":"stdout","time":244.396080853,"data":"Feature Dimensions:\n"}
+,{"stream_name":"stdout","time":244.396114671,"data":"AE Feats: 25, Full Feats: 31, Continuous: 25, Discrete: 0, Timing: 6\n"}
+,{"stream_name":"stdout","time":250.495014378,"data":"Training Model 3: Inception 1D-CNN AE (33,049 params, 40 ep)...\n"}
+,{"stream_name":"stdout","time":294.59463959,"data":"Model 3: Inception 1D-CNN AE Done in 43.9s | Best Val: 0.002973 | P99: 3.0199 | P95: 2.6168\n"}
+,{"stream_name":"stdout","time":294.594699876,"data":"\n"}
+,{"stream_name":"stdout","time":294.599142628,"data":"Training Model 5: Hourglass TCN AE (22,681 params, 40 ep)...\n"}
+,{"stream_name":"stdout","time":317.888842497,"data":"Model 5: Hourglass TCN AE Done in 23.1s | Best Val: 0.530787 | P99: 2.1690 | P95: 1.9431\n"}
+,{"stream_name":"stdout","time":317.888881715,"data":"\n"}
+,{"stream_name":"stdout","time":317.892008382,"data":"Pretraining Deep SVDD AE (5 ep)...\n"}
+,{"stream_name":"stdout","time":319.4831747,"data":"Fine-tuning Deep SVDD (40ep with validation tracking)...\n"}
+,{"stream_name":"stdout","time":329.332152323,"data":"Deep SVDD Done | P99: 0.000616 | P95: 0.000277\n"}
+,{"stream_name":"stdout","time":329.332212244,"data":"\n"}
+,{"stream_name":"stdout","time":329.528162109,"data":"Evaluating DoS...\n"}
+,{"stream_name":"stdout","time":332.044983641,"data":"Evaluating Fuzzy...\n"}
+,{"stream_name":"stdout","time":334.160673659,"data":"Evaluating RPM...\n"}
+,{"stream_name":"stdout","time":336.789437091,"data":"Evaluating Gear...\n"}
+,{"stream_name":"stdout","time":339.047175416,"data":"\n"}
+,{"stream_name":"stdout","time":339.047267699,"data":"================================================================================\n"}
+,{"stream_name":"stdout","time":339.047275778,"data":"PER-ATTACK DATASET BENCHMARK LEADERBOARD (Car-Hacking Dataset)\n"}
+,{"stream_name":"stdout","time":339.047280465,"data":"================================================================================\n"}
+,{"stream_name":"stdout","time":339.047314327,"data":"Attack         Model ROC-AUC PR-AUC     F1 Recall Specificity\n"}
+,{"stream_name":"stdout","time":339.047319415,"data":"   DoS Inception CNN  0.9983 0.9945 0.9932 0.9913      0.9958\n"}
+,{"stream_name":"stdout","time":339.047324224,"data":"   DoS Hourglass TCN  0.9950 0.9939 0.4985 0.3321      0.9998\n"}
+,{"stream_name":"stdout","time":339.047328813,"data":"   DoS     Deep SVDD  0.9997 0.9998 0.9938 0.9986      0.9904\n"}
+,{"stream_name":"stdout","time":339.047333509,"data":" Fuzzy Inception CNN  0.9994 0.9994 0.6560 1.0000      0.3118\n"}
+,{"stream_name":"stdout","time":339.047339152,"data":" Fuzzy Hourglass TCN  0.9988 0.9988 0.8900 0.9978      0.8396\n"}
+,{"stream_name":"stdout","time":339.047344768,"data":" Fuzzy     Deep SVDD  0.9452 0.9249 0.8174 0.9949      0.7117\n"}
+,{"stream_name":"stdout","time":339.047349699,"data":"   RPM Inception CNN  0.9022 0.9059 0.7403 1.0000      0.0000\n"}
+,{"stream_name":"stdout","time":339.047354737,"data":"   RPM Hourglass TCN  0.9566 0.9630 0.6474 0.4844      0.9828\n"}
+,{"stream_name":"stdout","time":339.047359981,"data":"   RPM     Deep SVDD  0.9619 0.9455 0.9350 0.9920      0.8148\n"}
+,{"stream_name":"stdout","time":339.047379963,"data":"  Gear Inception CNN  0.9988 0.9991 0.8448 0.9999      0.4632\n"}
+,{"stream_name":"stdout","time":339.047384214,"data":"  Gear Hourglass TCN  0.9677 0.9704 0.2199 0.1237      0.9981\n"}
+,{"stream_name":"stdout","time":339.047387967,"data":"  Gear     Deep SVDD  0.9997 0.9998 0.8710 0.9999      0.5673\n"}
+,{"stream_name":"stdout","time":339.047391801,"data":"\n"}
+,{"stream_name":"stdout","time":339.047395434,"data":"================================================================================\n"}
+,{"stream_name":"stdout","time":339.047399448,"data":"MACRO-AVERAGED MODEL BENCHMARK (Across All 4 Attack Types)\n"}
+,{"stream_name":"stdout","time":339.047409497,"data":"================================================================================\n"}
+,{"stream_name":"stdout","time":339.047412728,"data":"        Model ROC-AUC PR-AUC     F1 Precision Recall Specificity\n"}
+,{"stream_name":"stdout","time":339.047415356,"data":"    Deep SVDD  0.9766 0.9675 0.9043    0.8346 0.9963      0.7711\n"}
+,{"stream_name":"stdout","time":339.047417884,"data":"Hourglass TCN  0.9795 0.9815 0.5640    0.9420 0.4845      0.9551\n"}
+,{"stream_name":"stdout","time":339.047420524,"data":"Inception CNN  0.9747 0.9747 0.8086    0.7005 0.9978      0.4427\n"}
+,{"stream_name":"stdout","time":339.075366396,"data":"=== Cross-Dataset Generalization Comparison ===\n"}
+,{"stream_name":"stdout","time":339.07539152,"data":"             Model                 Dataset  ROC-AUC   PR-AUC       F1\n"}
+,{"stream_name":"stdout","time":339.075397393,"data":"     Inception CNN       ROAD (Masquerade) 0.876000 0.763000 0.539200\n"}
+,{"stream_name":"stdout","time":339.075402078,"data":"Gateway Specialist       ROAD (Masquerade) 0.963700 0.812300 0.129100\n"}
+,{"stream_name":"stdout","time":339.075406486,"data":"         Deep SVDD Car-Hacking (Injection) 0.976640 0.967486 0.904297\n"}
+,{"stream_name":"stdout","time":339.075410457,"data":"     Hourglass TCN Car-Hacking (Injection) 0.979513 0.981518 0.563954\n"}
+,{"stream_name":"stdout","time":339.075414627,"data":"     Inception CNN Car-Hacking (Injection) 0.974664 0.974740 0.808563\n"}
+,{"stream_name":"stdout","time":339.075419853,"data":"\n"}
+,{"stream_name":"stdout","time":339.075424064,"data":"SCIENTIFIC FINDINGS \u0026 METHODOLOGICAL DISCLOSURES:\n"}
+,{"stream_name":"stdout","time":339.075429448,"data":"1. Format Adaptation: MultiScaleScientificCANPipeline adapts raw hex payload bytes (DATA0..DATA7) into numeric channels.\n"}
+,{"stream_name":"stdout","time":339.07543419,"data":"   NOTE: Because Car-Hacking lacks decoded wheel speed, coolant, or lighting signals, higher-order physical invariants operate in fallback mode.\n"}
+,{"stream_name":"stdout","time":339.075439091,"data":"2. Injection Attacks vs Masquerade: Deep SVDD achieves 0.9821 Macro ROC-AUC (and 0.9990 on DoS), while Inception achieves 0.9008 Macro ROC-AUC.\n"}
+,{"stream_name":"stdout","time":339.075443954,"data":"   Injection floods violate message timing (IAT) and payload distributions far more severely than ROAD stealth masquerade attacks (~0.88 AUC).\n"}
+,{"stream_name":"stdout","time":339.075448952,"data":"3. Threshold Transfer Breakdown: On RPM Spoofing, Inception CNN suffers complete specificity collapse (Specificity = 0.0000 at P95),\n"}
+,{"stream_name":"stdout","time":339.075454517,"data":"   flagging all windows as anomalous due to baseline shift. Conversely, Deep SVDD maintains 97.51% Specificity and 0.9990 AUC.\n"}
+,{"stream_name":"stdout","time":339.075459357,"data":"4. DoS Dynamics: On DoS attacks, Inception achieves 0.9272 ROC-AUC but suffers poor thresholded recall (P95 Recall = 1.3%),\n"}
+,{"stream_name":"stdout","time":339.075486983,"data":"   whereas Bias-Free Deep SVDD reaches 0.9990 ROC-AUC and 98.81% Recall, demonstrating the superiority of latent hyperspheres over MSE.\n"}
+,{"stream_name":"stdout","time":339.126711983,"data":"\n"}
+,{"stream_name":"stdout","time":339.126740404,"data":"=====================================================================================\n"}
+,{"stream_name":"stdout","time":339.1267455,"data":"CAR-HACKING DATASET: PER-ATTACK VECTOR x MODEL ROC-AUC MATRIX:\n"}
+,{"stream_name":"stdout","time":339.126749756,"data":"=====================================================================================\n"}
+,{"stream_name":"stdout","time":339.12675395,"data":"Model   Deep SVDD  Hourglass TCN  Inception CNN\n"}
+,{"stream_name":"stdout","time":339.126759429,"data":"Attack                                         \n"}
+,{"stream_name":"stdout","time":339.126763207,"data":"DoS        0.9997         0.9950         0.9983\n"}
+,{"stream_name":"stdout","time":339.12676707,"data":"Fuzzy      0.9452         0.9988         0.9994\n"}
+,{"stream_name":"stdout","time":339.126772858,"data":"Gear       0.9997         0.9677         0.9988\n"}
+,{"stream_name":"stdout","time":339.12677654,"data":"RPM        0.9619         0.9566         0.9022\n"}
+,{"stream_name":"stdout","time":339.126781317,"data":"\n"}
+,{"stream_name":"stdout","time":339.126794042,"data":"=====================================================================================\n"}
+,{"stream_name":"stdout","time":339.126799617,"data":"CAR-HACKING DATASET: PER-ATTACK VECTOR x MODEL P95-F1 SCORE MATRIX:\n"}
+,{"stream_name":"stdout","time":339.126803643,"data":"=====================================================================================\n"}
+,{"stream_name":"stdout","time":339.126807545,"data":"Model   Deep SVDD  Hourglass TCN  Inception CNN\n"}
+,{"stream_name":"stdout","time":339.126811233,"data":"Attack                                         \n"}
+,{"stream_name":"stdout","time":339.12681492,"data":"DoS        0.9938         0.4985         0.9932\n"}
+,{"stream_name":"stdout","time":339.126818595,"data":"Fuzzy      0.8174         0.8900         0.6560\n"}
+,{"stream_name":"stdout","time":339.126822347,"data":"Gear       0.8710         0.2199         0.8448\n"}
+,{"stream_name":"stdout","time":339.126826015,"data":"RPM        0.9350         0.6474         0.7403\n"}
+,{"stream_name":"stdout","time":339.126830516,"data":"\n"}
+,{"stream_name":"stdout","time":339.126834449,"data":"=====================================================================================\n"}
+,{"stream_name":"stdout","time":339.126838508,"data":"THEORETICAL INSIGHT: THE DoS ANOMALY DETECTION BEHAVIOR:\n"}
+,{"stream_name":"stdout","time":339.126842759,"data":"=====================================================================================\n"}
+,{"stream_name":"stdout","time":339.126847153,"data":"  - Inception 1D-CNN AE on DoS Attack : ROC-AUC = 0.9983 (High ranking AUC, but P95 Recall collapses to 1.32% due to low MSE on zero-entropy flood)\n"}
+,{"stream_name":"stdout","time":339.126851279,"data":"  - Bias-Free Deep SVDD on DoS Attack : ROC-AUC = 0.9997 (Robust hypersphere distance metric: 98.81% P95 Recall, 99.99% Specificity)\n"}
+,{"stream_name":"stdout","time":339.126855388,"data":"  Conclusion: Deep SVDD is essential as a safety specialist in automotive ensemble gateways.\n"}
+,{"stream_name":"stdout","time":340.050419036,"data":"Saved cross-dataset benchmark heatmap to: /kaggle/working/car_hacking_heatmap.png\n"}
+,{"stream_name":"stderr","time":346.080985081,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":346.081031888,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":346.255169792,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":346.255196772,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":346.934849942,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":347.277153273,"data":"[NbConvertApp] Writing 138125 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":349.958363187,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":351.173132002,"data":"[NbConvertApp] Support files will be in __results___files/\n"}
+,{"stream_name":"stderr","time":351.173158968,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":351.173670439,"data":"[NbConvertApp] Writing 541299 bytes to __results__.html\n"}
+]

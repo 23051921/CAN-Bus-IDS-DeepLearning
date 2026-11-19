@@ -1,0 +1,14 @@
+Metric,Value
+Model Parameter Count (HPO Winner),"128,557"
+Total MAC Operations (Conv1D + Linear / window),"6,310,400 MACs"
+FP32 Model Storage Size (KB),535.87 KB
+INT8 Quantized Weight Size (KB),168.73 KB
+Memory Footprint Compression Ratio,68.5% Reduction (Integer Quantized)
+Mean Inference Latency (Host CPU),1.6255 ms
+Median Inference Latency (P50),1.6018 ms
+95th Percentile Latency (P95),1.8568 ms
+99th Percentile Latency (P99),2.5251 ms
+"Observed P99.99 Latency (5,000 runs)",4.1544 ms
+Real-Time Execution Jitter (std dev),0.2182 ms
+Automotive Flash Feasibility (<= 512 KB Target),COMPLIANT (168.73 KB footprint fits automotive Flash ROM target <= 512 KB)
+Real-Time Window Latency Feasibility (<= 10.0 ms Cadence),COMPLIANT WITH 10ms CAN CADENCE (Mean: 1.63 ms | P95: 1.86 ms << 10.0 ms CAN stride deadline; sub-1.0ms ECU compilation target)

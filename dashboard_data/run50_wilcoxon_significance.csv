@@ -1,0 +1,7 @@
+Comparison (Champion vs Baseline),Mean Delta AUC,Wilcoxon W,p-value,Rank-Biserial Effect Size (r),Significance
+Inception 1D-CNN AE > Full-Attn Transformer AE,+0.1205,91.0,1.2207e-04,+1.000,*** (p < 0.001)
+Inception 1D-CNN AE > Seq2Seq BiLSTM AE,+0.1132,87.0,8.5449e-04,+0.912,*** (p < 0.001)
+Inception 1D-CNN AE > Hourglass TCN AE,+0.0679,62.0,1.3672e-01,+0.363,NS (Not Significant)
+Inception 1D-CNN AE > Bias-Free Deep SVDD,+0.0710,48.0,4.4629e-01,+0.055,NS (Not Significant)
+Inception 1D-CNN AE > Conv-USAD,+0.1482,91.0,1.2207e-04,+1.000,*** (p < 0.001)
+Multi-Tier Central Gateway (Champion Inception + Thermal) > Inception 1D-CNN AE,+0.0305,3.0,6.2500e-01,+0.000,NS (Not Significant)
